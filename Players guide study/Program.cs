@@ -32,6 +32,7 @@ namespace Players_guide_study
             Console.WriteLine("A Value = " +a);
 
             //code below is from chapter 6 about types
+            Console.WriteLine("This section contains work from chapter 6");
             byte asinglebyte = 34;
             short asingleshort = 12345;
             long averybignumber = 801706373123861;
@@ -42,6 +43,17 @@ namespace Players_guide_study
             averybignumber = -1234568485455;
             Console.WriteLine("Behind the scenes stuff occurs");
             Console.WriteLine("byte: " + asinglebyte + ", short: " + asingleshort + ", long: " + averybignumber);
+
+            sbyte signedbyte = -23;
+            ushort unsignedshort = 62000;
+            uint unsignedint = 4000000000;
+            ulong unsignedlong = 8017063731238611234;
+
+            Console.WriteLine("signed byte: " +signedbyte +" unsigned short: " +unsignedshort+ " unsigned int: " +unsignedint+ " unsigned Long: " +unsignedlong);
+
+            char favoriteletter = 'D';
+            Console.WriteLine("My favorite Char is " +favoriteletter);
+
 
 
 
