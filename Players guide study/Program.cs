@@ -32,7 +32,10 @@ namespace Players_guide_study
             Console.WriteLine("A Value = " +a);
 
             //code below is from chapter 6 about types
+            System.Threading.Thread.Sleep(2000);
             Console.WriteLine("This section contains work from chapter 6");
+            System.Threading.Thread.Sleep(2000);
+
             byte asinglebyte = 34;
             short asingleshort = 12345;
             long averybignumber = 801706373123861;
@@ -53,6 +56,13 @@ namespace Players_guide_study
 
             char favoriteletter = 'D';
             Console.WriteLine("My favorite Char is " +favoriteletter);
+
+
+            //Chapter 7: Basic Math
+            System.Threading.Thread.Sleep(2000);
+            Console.WriteLine("Chapter 7 Basic Math");
+            System.Threading.Thread.Sleep(2000);
+
 
 
 
