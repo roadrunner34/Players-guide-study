@@ -61,7 +61,18 @@ namespace Players_guide_study
             //Chapter 7: Basic Math
             System.Threading.Thread.Sleep(2000);
             Console.WriteLine("Chapter 7 Basic Math");
-            System.Threading.Thread.Sleep(2000);
+            System.Threading.Thread.Sleep(3000);
+
+            int c = 3 + 4;
+            int d = 5 - 2;
+
+            //recommendation to use float or number for math with numbers. 
+            float totalCost = 22.54f;
+            float tipPercent = 0.18f;  //tip percent
+            float tipAmount = totalCost * tipPercent;
+
+            //Try it Out: calculate the area of a triangle
+
 
 
 
