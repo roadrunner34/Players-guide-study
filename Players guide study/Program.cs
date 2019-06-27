@@ -72,6 +72,11 @@ namespace Players_guide_study
             float tipAmount = totalCost * tipPercent;
 
             //Try it Out: calculate the area of a triangle
+            float length = 5f;
+            float width = 10f;
+            float area =(width * length)*.5f;
+
+            Console.WriteLine("The area of a triangle with a length of "+length+" and a width of "+width+" is "+area);
 
 
 
