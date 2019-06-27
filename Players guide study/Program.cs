@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace Players_guide_study
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
 
@@ -76,8 +78,11 @@ namespace Players_guide_study
             float width = 10f;
             float area =(width * length)*.5f;
 
-            Console.WriteLine("The area of a triangle with a length of "+length+" and a width of "+width+" is "+area);
-
+            Console.WriteLine("The area of a triangle with a length of " + length + " and a width of " + width + " is " + area);
+            
+            //area = Areaoftriangle(length, width); 
+            //Console.WriteLine("The area of a triangle with a length of "+length+" and a width of "+width+" is "+area);
+            
 
 
 
