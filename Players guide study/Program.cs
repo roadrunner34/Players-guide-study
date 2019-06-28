@@ -98,6 +98,11 @@ namespace Players_guide_study
             remainder = e % f;
             Console.WriteLine("Quotient= "+quotient+"and Remainder= "+remainder);
 
+            //Start of Chapter 8: User Input
+            System.Threading.Thread.Sleep(2000);
+            Console.WriteLine("Chapter 8: User Input");
+            System.Threading.Thread.Sleep(3000);
+
 
 
 
