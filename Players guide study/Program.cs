@@ -79,11 +79,24 @@ namespace Players_guide_study
             float area =(width * length)*.5f;
 
             Console.WriteLine("The area of a triangle with a length of " + length + " and a width of " + width + " is " + area);
-            
+
             //area = Areaoftriangle(length, width); 
             //Console.WriteLine("The area of a triangle with a length of "+length+" and a width of "+width+" is "+area);
-            
 
+            int totalApples = 23;
+            int people = 7;
+            int remainingapples = totalApples % people; //this will be 2
+
+            Console.WriteLine(remainingapples);
+
+
+            int e = 17;
+            int f = 4;
+            int quotient;
+            int remainder;
+            quotient = e / f;
+            remainder = e % f;
+            Console.WriteLine("Quotient= "+quotient+"and Remainder= "+remainder);
 
 
 
