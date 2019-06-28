@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace Players_guide_study
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
 
@@ -61,8 +63,40 @@ namespace Players_guide_study
             //Chapter 7: Basic Math
             System.Threading.Thread.Sleep(2000);
             Console.WriteLine("Chapter 7 Basic Math");
-            System.Threading.Thread.Sleep(2000);
+            System.Threading.Thread.Sleep(3000);
 
+            int c = 3 + 4;
+            int d = 5 - 2;
+
+            //recommendation to use float or number for math with numbers. 
+            float totalCost = 22.54f;
+            float tipPercent = 0.18f;  //tip percent
+            float tipAmount = totalCost * tipPercent;
+
+            //Try it Out: calculate the area of a triangle
+            float length = 5f;
+            float width = 10f;
+            float area =(width * length)*.5f;
+
+            Console.WriteLine("The area of a triangle with a length of " + length + " and a width of " + width + " is " + area);
+
+            //area = Areaoftriangle(length, width); 
+            //Console.WriteLine("The area of a triangle with a length of "+length+" and a width of "+width+" is "+area);
+
+            int totalApples = 23;
+            int people = 7;
+            int remainingapples = totalApples % people; //this will be 2
+
+            Console.WriteLine(remainingapples);
+
+
+            int e = 17;
+            int f = 4;
+            int quotient;
+            int remainder;
+            quotient = e / f;
+            remainder = e % f;
+            Console.WriteLine("Quotient= "+quotient+"and Remainder= "+remainder);
 
 
 
