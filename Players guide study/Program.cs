@@ -98,6 +98,31 @@ namespace Players_guide_study
             remainder = e % f;
             Console.WriteLine("Quotient= "+quotient+"and Remainder= "+remainder);
 
+            //Start of Chapter 8: User Input
+            System.Threading.Thread.Sleep(2000);
+            Console.WriteLine("Chapter 8: User Input");
+            System.Threading.Thread.Sleep(3000);
+
+            //Try it Out!
+            //we will ask for the dimensions of a cyliner and provide the area and volume in return.
+            Console.WriteLine("What is the height of the cylinder?");
+            double CylinderHeight = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("What is the radius of the base of the cylinder?");
+            double CylinderRadius = Convert.ToDouble(Console.ReadLine());
+            double pi = 3.1415926;
+
+            double CylinderVolume = pi * (CylinderRadius * CylinderRadius) * CylinderHeight;
+            Console.WriteLine("The volume of the cylinder is: " +CylinderVolume);
+
+            double CylinderSurfaceArea = 2 * pi * CylinderRadius * (CylinderRadius + CylinderHeight);
+            Console.WriteLine("The Surface area of the cylinder is: "+CylinderSurfaceArea);
+            Console.WriteLine("Press Any key to end the program");
+            Console.ReadKey();
+   
+
+
+
+
 
 
 
