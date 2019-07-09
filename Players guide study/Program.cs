@@ -126,20 +126,63 @@ namespace Players_guide_study
             System.Threading.Thread.Sleep(3000);
 
             //Try it Out
-			//What will happen in the following statements
-			//double a = 1.0 +1 +1.0f
-			//It will covert the 1.0 to a double as well as the 1.0f and end up with a 3 value
-			double a1 = 1.0 + 1 + 1.0f;
-			Console.WriteLine(a1);
-			//int x = (int)(7+3.0/4.0*2)
-			//It will first perform all the items in the parenthesis becoming (int)(8.5)
-			//Then it will get converted to an int.  So it should end up being 8.
-			int x = (int)(7 + 3.0 / 4.0 * 2);
-			Console.WriteLine(x);
-			//console.writeline((1+1)/2*3)
-			//this will print out the value 3.
-			Console.WriteLine((1 + 1) / 2 * 3);
+            //What will happen in the following statements
+            //double a = 1.0 +1 +1.0f
+            //It will covert the 1.0 to a double as well as the 1.0f and end up with a 3 value
+            double a1 = 1.0 + 1 + 1.0f;
+            Console.WriteLine(a1);
+            //int x = (int)(7+3.0/4.0*2)
+            //It will first perform all the items in the parenthesis becoming (int)(8.5)
+            //Then it will get converted to an int.  So it should end up being 8.
+            int x = (int)(7 + 3.0 / 4.0 * 2);
+            Console.WriteLine(x);
+            //console.writeline((1+1)/2*3)
+            //this will print out the value 3.
+            Console.WriteLine((1 + 1) / 2 * 3);
 
+            //Start of Chapter 10: Decision Making
+            //central part of decision making is the if statement
+            System.Threading.Thread.Sleep(2000);
+            Console.WriteLine("Chapter 10: Decision Making");
+            System.Threading.Thread.Sleep(3000);
+            //Try it Out:We will be checking to see if a number from the user is even or odd.
+            Console.WriteLine("We are checking if a number is even or odd.  Please enter a number:");
+            int evenorodd = Convert.ToInt32(Console.ReadLine());
+            int evenoroddremainder = evenorodd % 2;
+            if (evenoroddremainder ==0)
+            {
+                Console.WriteLine("The value you entered is even");
+            }
+            else
+            {
+                Console.WriteLine("The value you entered is odd");
+            }
+
+            //Try it out 2: Positive or Negative:
+            //We are writing a program to check if numbers are positive or negative before the calculation to determine whether the result should be positive or negative
+
+            Console.WriteLine("Hello, we are going to determine if the product of 2 numbers you give us is going to be positive or negative");
+            Console.WriteLine("Number 1:");
+            int numberone = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Number 2:");
+            int numbertwo = Convert.ToInt32(Console.ReadLine());
+            if(numberone>0 && numbertwo >0)
+            {
+                 Console.WriteLine("The resulting product of these numbers will be positive");
+            }
+            if(numberone>0 && numbertwo<0)
+            {
+                Console.WriteLine("The resulting product of these numbers will be negative");
+            }
+            if(numberone<0 && numbertwo>0)
+            {
+                Console.WriteLine("The resulting product of these numbers will be negative");
+            }
+            if(numberone<0 && numbertwo<0)
+            {
+                Console.WriteLine("The resulting product of these numbers is positive");
+            }
+            Console.WriteLine("The result is = " + numberone * numbertwo);
         }
     }
 }
