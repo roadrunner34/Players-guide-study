@@ -187,9 +187,48 @@ namespace Players_guide_study
 
             //Start of Chapter 11: Switch Statements
             //An Alternative to if statements
-            System.Threading.Thread.Sleep(2000);
+            System.Threading.Thread.Sleep(1000);
             Console.WriteLine("Chapter 11: Switch Statements");
-            System.Threading.Thread.Sleep(3000);
+            System.Threading.Thread.Sleep(2000);
+
+            //Try it out:
+            //We are going to make a simple calculator that is going to allow the user to do math with 2 numbers and an operator, either +, -, *, /, or %.  Also can use ^ for power
+
+            Console.WriteLine("Hello, let's do some math");
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("I will need to know 2 numbers then an operator that you want to do for those numbers.");
+            System.Threading.Thread.Sleep(1500);
+            Console.WriteLine("An example is entering 2, 3, and then *.  This means that you want to multiply 2*3");
+            System.Threading.Thread.Sleep(2000);
+            Console.WriteLine("So please give me two numbers then an operator.  Either +, -, *, /, % (remainder) or ^");
+            int firstnumber = Convert.ToInt32(Console.ReadLine());
+            int secondnumber = Convert.ToInt32(Console.ReadLine());
+            String mathoperator = Console.ReadLine();
+
+            switch (mathoperator)
+            {
+                case "+":
+                    Console.WriteLine(firstnumber+secondnumber);
+                    break;
+                case "-":
+                    Console.WriteLine(firstnumber - secondnumber);
+                    break;
+                case "*":
+                    Console.WriteLine(firstnumber * secondnumber);
+                    break;
+                case "/":
+                    Console.WriteLine(firstnumber / secondnumber);
+                    break;
+                case "%":
+                    Console.WriteLine(firstnumber % secondnumber);
+                    break;
+                case "^":
+                    Console.WriteLine(Math.Pow(firstnumber, secondnumber));
+                    break;
+                default:
+                    Console.WriteLine("You did not enter a correct operator");
+                    break;
+            }
 
         }
     }
