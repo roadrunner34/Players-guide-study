@@ -13,7 +13,7 @@ namespace Players_guide_study
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine("Please choose a chapter to review.  Chapters 5-11 are currently available");
+            Console.WriteLine("Please choose a chapter to review.  Chapters 5-12 are currently available");
             int chapterselect = Convert.ToInt32(Console.ReadLine());
             switch (chapterselect)
                 {
@@ -244,6 +244,22 @@ namespace Players_guide_study
                     }
 
                             break;
+
+                case 12:
+                    System.Threading.Thread.Sleep(1000);
+                    Console.WriteLine("Chapter 12: Looping");
+                    System.Threading.Thread.Sleep(2000);
+                    //In a nutshell, while, do-while, and for loops allows us to repeat things in various ways
+                    //While Loop: it will repeat certain code over and over again as long as a certain condition is true.  They look kinds of like an if statement
+                    //Example:
+                    int c = 1;
+                    while (c<=10)
+                    {
+                        Console.WriteLine(c);
+                        c++;
+                    }
+
+                    break;
 
                 default:
                     {
