@@ -247,7 +247,7 @@ namespace Players_guide_study
 
                 default:
                     {
-                        Console.WriteLine("No more chapter work exists for that value: "+chapterselect);
+                        Console.WriteLine("No chapter work exists for that value: "+chapterselect);
                         break;
                     }
 
