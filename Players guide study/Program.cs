@@ -252,15 +252,46 @@ namespace Players_guide_study
                     //In a nutshell, while, do-while, and for loops allows us to repeat things in various ways
                     //While Loop: it will repeat certain code over and over again as long as a certain condition is true.  They look kinds of like an if statement
                     //Example:
-                    int c = 1;
-                    while (c<=10)
+                    //int c = 1;
+                    //while (c<=10)
+                    //{
+                    //    Console.Write(c);
+                    //    c++;
+                    //}
+
+                    for(int row1=0; row1 <5; row1++)
                     {
-                        Console.WriteLine(c);
-                        c++;
+                        for(int column1=0; column1<10; column1++)
+                            Console.Write("*");
+
+                        Console.WriteLine();
                     }
 
+                    //Try it Out.  Print a Pyramid
+                    //I will want to to create a pyramid made out of starts.
+                    for(int row =0; row<6; row++)
+                    {
+                        for(int column=0; column<9;column++)
+                        {
+
+
+                            Console.Write("*");
+
+                        }
+                        Console.WriteLine();
+
+                    }
+
+
+
+                    //End of Chapter 12.  All Chapter 12 code should be before this Break
                     break;
 
+
+
+
+
+                //This breaks the Switch Statement.  All code should be before this.
                 default:
                     {
                         Console.WriteLine("No chapter work exists for that value: "+chapterselect);
