@@ -273,9 +273,8 @@ namespace Players_guide_study
                     {
                         for(int column=0; column<9;column++)
                         {
-
-
-                            Console.Write("*");
+                            for(int pyramid =4;)
+                                Console.Write("*");
 
                         }
                         Console.WriteLine();
