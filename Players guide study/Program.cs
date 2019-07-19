@@ -13,7 +13,7 @@ namespace Players_guide_study
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine("Please choose a chapter to review.  Chapters 5-12 are currently available");
+            Console.WriteLine("Please choose a chapter to review.  Chapters 5-13 are currently available");
             int chapterselect = Convert.ToInt32(Console.ReadLine());
             switch (chapterselect)
                 {
@@ -310,7 +310,14 @@ namespace Players_guide_study
                     //End of Chapter 12.  All Chapter 12 code should be before this Break
                     break;
 
+                case 13:
 
+
+
+
+
+                    //End of Chapter 13. All Chapter 13 code should be before this break.
+                    break;
 
 
 
