@@ -261,7 +261,7 @@ namespace Players_guide_study
 
                     for(int row1=0; row1 <5; row1++)
                     {
-                        for(int column1=0; column1<10; column1++)
+                        for(int column1=0; column1<row1+1; column1++)
                             Console.Write("*");
 
                         Console.WriteLine();
@@ -269,17 +269,19 @@ namespace Players_guide_study
 
                     //Try it Out.  Print a Pyramid
                     //I will want to to create a pyramid made out of starts.
-                    for(int row =0; row<6; row++)
+                    for (int row = 0; row < 5; row++)
                     {
-                        for(int column=0; column<9;column++)
-                        {
-                            for(int pyramid =4;)
-                                Console.Write("*");
 
-                        }
+                        for (int space = 0; space < 5-row-1; space++)
+                            Console.Write(" ");
+                        
+                        for (int star = 0; star <row*2+1; star++)
+                            Console.Write("*");
+                        
                         Console.WriteLine();
 
                     }
+
 
 
 
