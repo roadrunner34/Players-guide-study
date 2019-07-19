@@ -13,7 +13,7 @@ namespace Players_guide_study
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine("Please choose a chapter to review.  Chapters 5-11 are currently available");
+            Console.WriteLine("Please choose a chapter to review.  Chapters 5-12 are currently available");
             int chapterselect = Convert.ToInt32(Console.ReadLine());
             switch (chapterselect)
                 {
@@ -245,6 +245,76 @@ namespace Players_guide_study
 
                             break;
 
+                case 12:
+                    System.Threading.Thread.Sleep(1000);
+                    Console.WriteLine("Chapter 12: Looping");
+                    System.Threading.Thread.Sleep(2000);
+                    //In a nutshell, while, do-while, and for loops allows us to repeat things in various ways
+                    //While Loop: it will repeat certain code over and over again as long as a certain condition is true.  They look kinds of like an if statement
+                    //Example:
+                    //int c = 1;
+                    //while (c<=10)
+                    //{
+                    //    Console.Write(c);
+                    //    c++;
+                    //}
+
+                    for(int row1=0; row1 <5; row1++)
+                    {
+                        for(int column1=0; column1<row1+1; column1++)
+                            Console.Write("*");
+
+                        Console.WriteLine();
+                    }
+
+                    //Try it Out.  Print a Pyramid
+                    //I will want to to create a pyramid made out of starts.
+                    for (int row = 0; row < 5; row++)
+                    {
+
+                        for (int space = 0; space < 5-row-1; space++)
+                            Console.Write(" ");
+                        
+                        for (int asterisk = 0; asterisk <row*2+1; asterisk++)
+                            Console.Write("*");
+                        
+                        Console.WriteLine();
+
+                    }
+
+
+                    //Try it out FizzBizz
+
+                    for (int printnumber = 1; printnumber <=100; printnumber++)
+                    {
+                        if(printnumber%3==0 && printnumber%5==0)
+                        {
+                            Console.WriteLine("FizzBuzz");
+                        }
+                        else if(printnumber%3==0)
+                        {
+                            Console.WriteLine("Fizz");
+                        }
+                        else if(printnumber%3!=0)
+                        {
+                            Console.WriteLine("Buzz");
+                        }
+                        else
+                        {
+                            Console.WriteLine(printnumber);
+                        }
+                    }
+
+
+
+                    //End of Chapter 12.  All Chapter 12 code should be before this Break
+                    break;
+
+
+
+
+
+                //This breaks the Switch Statement.  All code should be before this.
                 default:
                     {
                         Console.WriteLine("No chapter work exists for that value: "+chapterselect);
