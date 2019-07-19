@@ -275,13 +275,35 @@ namespace Players_guide_study
                         for (int space = 0; space < 5-row-1; space++)
                             Console.Write(" ");
                         
-                        for (int star = 0; star <row*2+1; star++)
+                        for (int asterisk = 0; asterisk <row*2+1; asterisk++)
                             Console.Write("*");
                         
                         Console.WriteLine();
 
                     }
 
+
+                    //Try it out FizzBizz
+
+                    for (int printnumber = 1; printnumber <=100; printnumber++)
+                    {
+                        if(printnumber%3==0 && printnumber%5==0)
+                        {
+                            Console.WriteLine("FizzBuzz");
+                        }
+                        else if(printnumber%3==0)
+                        {
+                            Console.WriteLine("Fizz");
+                        }
+                        else if(printnumber%3!=0)
+                        {
+                            Console.WriteLine("Buzz");
+                        }
+                        else
+                        {
+                            Console.WriteLine(printnumber);
+                        }
+                    }
 
 
 
