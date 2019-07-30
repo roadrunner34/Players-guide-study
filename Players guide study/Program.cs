@@ -282,8 +282,7 @@ namespace Players_guide_study
 
                     }
 
-
-                    //Try it out FizzBizz
+                                        //Try it out FizzBizz
 
                     for (int printnumber = 1; printnumber <=100; printnumber++)
                     {
@@ -305,13 +304,13 @@ namespace Players_guide_study
                         }
                     }
 
-
-
                     //End of Chapter 12.  All Chapter 12 code should be before this Break
                     break;
 
                 case 13:
-
+                    System.Threading.Thread.Sleep(1000);
+                    Console.WriteLine("Chapter 13: Arrays");
+                    System.Threading.Thread.Sleep(2000);
 
 
 
