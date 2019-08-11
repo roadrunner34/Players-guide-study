@@ -13,7 +13,7 @@ namespace Players_guide_study
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine("Please choose a chapter to review.  Chapters 5-12 are currently available");
+            Console.WriteLine("Please choose a chapter to review.  Chapters 5-13 are currently available");
             int chapterselect = Convert.ToInt32(Console.ReadLine());
             switch (chapterselect)
                 {
@@ -282,8 +282,7 @@ namespace Players_guide_study
 
                     }
 
-
-                    //Try it out FizzBizz
+                                        //Try it out FizzBizz
 
                     for (int printnumber = 1; printnumber <=100; printnumber++)
                     {
@@ -305,12 +304,75 @@ namespace Players_guide_study
                         }
                     }
 
-
-
                     //End of Chapter 12.  All Chapter 12 code should be before this Break
                     break;
 
+                case 13:
+                    System.Threading.Thread.Sleep(1000);
+                    Console.WriteLine("Chapter 13: Arrays");
+                    System.Threading.Thread.Sleep(2000);
 
+                    //Try it Out!
+                    //Copying an Array.  Write code to copy an array.  
+                    //First create an initial array with 10 items.
+                    //Second ceate a second array variable, the same size as the original.
+                    //Then use a loop to read values from the original array and place them in the new array.
+                    //The print them both out to check that you complete it correctly.
+
+                    int[] firstarray = new int[] { 10, 9, 8, 7, 5, 3, 2, 1, 0, 32 };
+                    int[] secondarray = new int[firstarray.Length];
+
+                    for (int copyindex = 0; copyindex < firstarray.Length; copyindex++)
+                        secondarray[copyindex] = firstarray[copyindex];
+
+                    for (int firstarrayindex = 0; firstarrayindex<firstarray.Length; firstarrayindex++)
+                        Console.Write(firstarray[firstarrayindex] +" ");
+                    Console.WriteLine();
+                    for (int secondarrayindex = 0; secondarrayindex < secondarray.Length; secondarrayindex++)
+                        Console.Write(firstarray[secondarrayindex] +" ");
+                    Console.WriteLine();
+
+                    //Example of Array of Arrays or a Jagged Array
+                    int[][] matrix = new int[4][];
+                    matrix[0] = new int[2];
+                    matrix[1] = new int[6];
+                    matrix[2] = new int[3];
+                    matrix[3] = new int[2];
+                    
+
+                    for (int row = 0; row<matrix.Length; row++)
+                    {
+                        for(int column = 0; column<matrix[row].Length; column++)
+                            Console.Write(matrix[row][column]+" ");
+
+                        Console.WriteLine();
+                    }
+
+                    //Try it Out!  Minimum and Averages revisited.  Use the Foreach loop to go through and find the minimum value and the average of values
+                    //Minimum Value
+                    int[] minimumArray = new int[] { 4, 51, -7, 13, -99, 15, -8, 45, 90 };
+                    int currentMinimum = Int32.MaxValue;
+
+                    foreach(int tiny in minimumArray)
+                    {
+                        if (tiny < currentMinimum)
+                            currentMinimum = tiny;
+                    }
+                    Console.WriteLine("The minimum value is: "+currentMinimum);
+
+                    //For the Average value in the array
+                    int[] averageArray = new int[] { 4, 51, -7, 13, -99, 15, -8, 45, 90 };
+                    int total = 0;
+
+                    foreach (int averageValue in averageArray)
+                        total += averageValue;
+
+                    float finalAverageValue = (float)total / averageArray.Length;
+                    Console.WriteLine("The average value in the array is: "+ finalAverageValue);
+
+
+                    //End of Chapter 13. All Chapter 13 code should be before this break.
+                    break;
 
 
 
