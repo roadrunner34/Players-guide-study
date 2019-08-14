@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 
 namespace Players_guide_study
 {
+    //Enumarating months of year for Try it out in Chapter 14
+    enum MonthsOfYear { January=1,February=2, March=3, April=4, May=5, June=6, July=7, August=8, September=9, October=10, November=11,December=12};
     class Program
     {
         public static void Main(string[] args)
@@ -379,6 +381,13 @@ namespace Players_guide_study
                     Console.WriteLine("Chapter 14: Enumeration");
                     System.Threading.Thread.Sleep(2000);
 
+                    //Try it out: Months of Year.  Using DaysOfWeek as an example, create an enumeration to reprsent months of year, and assign ethem values of 1-12
+                    Console.WriteLine("Please Give a number between 1 & 12");
+                    int InputedNumber = Convert.ToInt32(Console.ReadLine());
+                        if (InputedNumber<=12 && InputedNumber>=1)
+                    {
+                        
+                    }
 
                     //End of Chapter 14. All Chapter 14 code should be before this break.
                     break;
