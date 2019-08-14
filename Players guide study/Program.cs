@@ -437,7 +437,9 @@ namespace Players_guide_study
                     break;
 
                     case 15:
-
+                    System.Threading.Thread.Sleep(1000);
+                    Console.WriteLine("Chapter 15: Methods");
+                    System.Threading.Thread.Sleep(2000);
 
 
 
