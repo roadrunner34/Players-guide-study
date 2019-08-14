@@ -385,12 +385,58 @@ namespace Players_guide_study
                     Console.WriteLine("Please Give a number between 1 & 12");
                     int InputedNumber = Convert.ToInt32(Console.ReadLine());
                         if (InputedNumber<=12 && InputedNumber>=1)
-                    {
-                        
-                    }
+                            {
+                                switch (InputedNumber)
+                                {
+                                    case 1:
+                                        Console.WriteLine("You Picked January");
+                                        break;
+                                    case 2:
+                                        Console.WriteLine("You Picked February");
+                                        break;
+                                    case 3:
+                                        Console.WriteLine("You Picked March");
+                                        break;
+                                    case 4:
+                                        Console.WriteLine("You Picked April");
+                                        break;
+                                    case 5:
+                                        Console.WriteLine("You Picked May");
+                                        break;
+                                    case 6:
+                                        Console.WriteLine("You Picked June");
+                                        break;
+                                    case 7:
+                                        Console.WriteLine("You Picked July");
+                                        break;
+                                    case 8:
+                                        Console.WriteLine("You Picked August");
+                                        break;
+                                    case 9:
+                                        Console.WriteLine("You Picked September");
+                                        break;
+                                    case 10:
+                                        Console.WriteLine("You Picked October");
+                                        break;
+                                    case 11:
+                                        Console.WriteLine("You Picked November");
+                                        break;
+                                    case 12:
+                                        Console.WriteLine("You Picked Ecember");
+                                        break;
+                                }
+                        }
+                        else
+                            {
+                                Console.WriteLine("You were supposed to input a number between 1 & 12.  Shame");
+                            }
 
                     //End of Chapter 14. All Chapter 14 code should be before this break.
                     break;
+
+
+
+
 
                 //This breaks the Switch Statement.  All code should be before this.
                 default:
