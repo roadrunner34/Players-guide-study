@@ -8,12 +8,14 @@ using System.Threading.Tasks;
 
 namespace Players_guide_study
 {
+    //Enumarating months of year for Try it out in Chapter 14
+    enum MonthsOfYear { January=1,February=2, March=3, April=4, May=5, June=6, July=7, August=8, September=9, October=10, November=11,December=12};
     class Program
     {
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine("Please choose a chapter to review.  Chapters 5-13 are currently available");
+            Console.WriteLine("Please choose a chapter to review.  Chapters 5-14 are currently available");
             int chapterselect = Convert.ToInt32(Console.ReadLine());
             switch (chapterselect)
                 {
@@ -373,6 +375,66 @@ namespace Players_guide_study
 
                     //End of Chapter 13. All Chapter 13 code should be before this break.
                     break;
+
+                case 14:
+                    System.Threading.Thread.Sleep(1000);
+                    Console.WriteLine("Chapter 14: Enumeration");
+                    System.Threading.Thread.Sleep(2000);
+
+                    //Try it out: Months of Year.  Using DaysOfWeek as an example, create an enumeration to reprsent months of year, and assign ethem values of 1-12
+                    Console.WriteLine("Please Give a number between 1 & 12");
+                    int InputedNumber = Convert.ToInt32(Console.ReadLine());
+                        if (InputedNumber<=12 && InputedNumber>=1)
+                            {
+                                switch (InputedNumber)
+                                {
+                                    case 1:
+                                        Console.WriteLine("You Picked January");
+                                        break;
+                                    case 2:
+                                        Console.WriteLine("You Picked February");
+                                        break;
+                                    case 3:
+                                        Console.WriteLine("You Picked March");
+                                        break;
+                                    case 4:
+                                        Console.WriteLine("You Picked April");
+                                        break;
+                                    case 5:
+                                        Console.WriteLine("You Picked May");
+                                        break;
+                                    case 6:
+                                        Console.WriteLine("You Picked June");
+                                        break;
+                                    case 7:
+                                        Console.WriteLine("You Picked July");
+                                        break;
+                                    case 8:
+                                        Console.WriteLine("You Picked August");
+                                        break;
+                                    case 9:
+                                        Console.WriteLine("You Picked September");
+                                        break;
+                                    case 10:
+                                        Console.WriteLine("You Picked October");
+                                        break;
+                                    case 11:
+                                        Console.WriteLine("You Picked November");
+                                        break;
+                                    case 12:
+                                        Console.WriteLine("You Picked Ecember");
+                                        break;
+                                }
+                        }
+                        else
+                            {
+                                Console.WriteLine("You were supposed to input a number between 1 & 12.  Shame");
+                            }
+
+                    //End of Chapter 14. All Chapter 14 code should be before this break.
+                    break;
+
+
 
 
 
