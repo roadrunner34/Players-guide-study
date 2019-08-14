@@ -384,8 +384,7 @@ namespace Players_guide_study
                     //Try it out: Months of Year.  Using DaysOfWeek as an example, create an enumeration to reprsent months of year, and assign ethem values of 1-12
                     Console.WriteLine("Please Give a number between 1 & 12");
                     int InputedNumber = Convert.ToInt32(Console.ReadLine());
-                        if (InputedNumber<=12 && InputedNumber>=1)
-                            {
+                        
                                 switch (InputedNumber)
                                 {
                                     case 1:
@@ -424,12 +423,15 @@ namespace Players_guide_study
                                     case 12:
                                         Console.WriteLine("You Picked Ecember");
                                         break;
+
+                                    default:
+                                        {
+                                            Console.WriteLine("You were supposed to input a number between 1 & 12.  Shame");
+                                            break;
+                                        }
                                 }
-                        }
-                        else
-                            {
-                                Console.WriteLine("You were supposed to input a number between 1 & 12.  Shame");
-                            }
+
+                      
 
                     //End of Chapter 14. All Chapter 14 code should be before this break.
                     break;
