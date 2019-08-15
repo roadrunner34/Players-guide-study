@@ -440,7 +440,7 @@ namespace Players_guide_study
                     System.Threading.Thread.Sleep(1000);
                     Console.WriteLine("Chapter 15: Methods");
                     System.Threading.Thread.Sleep(2000);
-
+                    //Methods are a way of creating resuable code.  I may have to separate out the chapters into a new program.
 
 
                     //End of Chapter 15. All Chapter 14 code should be before this break.
