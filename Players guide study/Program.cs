@@ -448,6 +448,7 @@ namespace Players_guide_study
 
                     int[] numbers = GenerateNumbers();
                     Reverse(numbers);
+                    PrintNumbers(numbers);
 
 
                     //End of Chapter 15. All Chapter 14 code should be before this break.
@@ -508,11 +509,25 @@ namespace Players_guide_study
             int startIndex = 0;
             int endIndex = numbers.Length-1;
 
-            for(startIndex = 0, )
+            while(startIndex <endIndex)
+            {
+                int tempspot = numbers[startIndex];
+                numbers[startIndex] = numbers[endIndex];
+                numbers[endIndex] = tempspot;
+
+                startIndex++;
+                endIndex--;
+            }
         
-           
         }
 
+        static void PrintNumbers(int[] numbers)
+        {
+            for (int index=1; index<numbers.Length; index++)
+            {
+                Console.Write(numbers[index] + " ");
+            }
+        }
 
 
 
