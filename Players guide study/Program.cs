@@ -446,9 +446,8 @@ namespace Players_guide_study
 
                     //try it out: Reversing an Array. 3 methods are needed.  1 to create an array. 1 to reverse the array and a thirs to print the array at the end.
 
-                    int[] numbers GenerateNumbers();
+                    int[] numbers = GenerateNumbers();
                     Reverse(numbers);
-                    PrintNumbers(numbers);
 
 
                     //End of Chapter 15. All Chapter 14 code should be before this break.
@@ -493,7 +492,7 @@ namespace Players_guide_study
             return usersNumber;
         }
 
-        static void [] GenerateNumbers()
+        static int[] GenerateNumbers()
         {
             int[] numbers = new int[10];
 
@@ -506,10 +505,12 @@ namespace Players_guide_study
 
         static void Reverse(int[] numbers)
         {
-        int startIndex = 0;
-        int endIndex = numbers.Length-1;
+            int startIndex = 0;
+            int endIndex = numbers.Length-1;
 
-
+            for(startIndex = 0, )
+        
+           
         }
 
 
