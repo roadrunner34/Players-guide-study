@@ -450,6 +450,7 @@ namespace Players_guide_study
                     Reverse(numbers);
                     PrintNumbers(numbers);
 
+                    //Try it out: Fibonacci Sequence
 
                     //End of Chapter 15. All Chapter 14 code should be before this break.
                     break;
@@ -493,6 +494,11 @@ namespace Players_guide_study
             return usersNumber;
         }
 
+
+        /// <summary>
+        /// the following Three Methods are for Chapter 15: Methods.  They create an array of numbers, reverse the numbers, and then print the array out. 
+        /// </summary>
+        /// <returns></returns>
         static int[] GenerateNumbers()
         {
             int[] numbers = new int[10];
@@ -529,7 +535,25 @@ namespace Players_guide_study
             }
         }
 
+        static int Fibonacci(int numbers)
+        {
+            int fibonacciPlace = 1;
+            int previousFibonacci = fibonacciPlace;
+            for (int start = 1; start < numbers; start++)
+            {
+                if (start == numbers)
+                {
+                   return Console.WriteLine(fibonacciPlace);
+                }
+                else 
+                    {
+                        previousFibonacci = fibonacciPlace;
+                        fibonacciPlace = fibonacciPlace + previousFibonacci;
+                    }
+            }
 
+            
+        }
 
     }
 
