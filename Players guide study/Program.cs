@@ -452,10 +452,12 @@ namespace Players_guide_study
                     Console.WriteLine();
 
                     
-                    Console.WriteLine("Hello, give me a number so I can check the fibonacci number in that place:");
+                    Console.WriteLine("Hello, The following loop will print out the first 10 fibonacci numbers");
                     //Try it out: Fibonacci Sequence
-                    int fibonacciNumberFromUser = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine(Fibonacci(fibonacciNumberFromUser));
+                    for(int fibonacciCounter = 1; fibonacciCounter<=10; fibonacciCounter++)
+                    {
+                        Console.WriteLine(Fibonacci(fibonacciCounter));
+                    }
                     //End of Chapter 15. All Chapter 14 code should be before this break.
                     break;
 
