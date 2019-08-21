@@ -15,10 +15,10 @@ namespace Players_guide_study
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine("Please choose a chapter to review.  Chapters 5-14 are currently available");
+            Console.WriteLine("Please choose a chapter to review.  Chapters 5-15 are currently available");
             int chapterselect = Convert.ToInt32(Console.ReadLine());
             switch (chapterselect)
-                {
+            {
 
                 case 5:
                     //Code below is from chapter 5 about variables
@@ -245,7 +245,7 @@ namespace Players_guide_study
                             break;
                     }
 
-                            break;
+                    break;
 
                 case 12:
                     System.Threading.Thread.Sleep(1000);
@@ -261,9 +261,9 @@ namespace Players_guide_study
                     //    c++;
                     //}
 
-                    for(int row1=0; row1 <5; row1++)
+                    for (int row1 = 0; row1 < 5; row1++)
                     {
-                        for(int column1=0; column1<row1+1; column1++)
+                        for (int column1 = 0; column1 < row1 + 1; column1++)
                             Console.Write("*");
 
                         Console.WriteLine();
@@ -274,29 +274,29 @@ namespace Players_guide_study
                     for (int row = 0; row < 5; row++)
                     {
 
-                        for (int space = 0; space < 5-row-1; space++)
+                        for (int space = 0; space < 5 - row - 1; space++)
                             Console.Write(" ");
-                        
-                        for (int asterisk = 0; asterisk <row*2+1; asterisk++)
+
+                        for (int asterisk = 0; asterisk < row * 2 + 1; asterisk++)
                             Console.Write("*");
-                        
+
                         Console.WriteLine();
 
                     }
 
-                                        //Try it out FizzBizz
+                    //Try it out FizzBizz
 
-                    for (int printnumber = 1; printnumber <=100; printnumber++)
+                    for (int printnumber = 1; printnumber <= 100; printnumber++)
                     {
-                        if(printnumber%3==0 && printnumber%5==0)
+                        if (printnumber % 3 == 0 && printnumber % 5 == 0)
                         {
                             Console.WriteLine("FizzBuzz");
                         }
-                        else if(printnumber%3==0)
+                        else if (printnumber % 3 == 0)
                         {
                             Console.WriteLine("Fizz");
                         }
-                        else if(printnumber%3!=0)
+                        else if (printnumber % 3 != 0)
                         {
                             Console.WriteLine("Buzz");
                         }
@@ -327,11 +327,11 @@ namespace Players_guide_study
                     for (int copyindex = 0; copyindex < firstarray.Length; copyindex++)
                         secondarray[copyindex] = firstarray[copyindex];
 
-                    for (int firstarrayindex = 0; firstarrayindex<firstarray.Length; firstarrayindex++)
-                        Console.Write(firstarray[firstarrayindex] +" ");
+                    for (int firstarrayindex = 0; firstarrayindex < firstarray.Length; firstarrayindex++)
+                        Console.Write(firstarray[firstarrayindex] + " ");
                     Console.WriteLine();
                     for (int secondarrayindex = 0; secondarrayindex < secondarray.Length; secondarrayindex++)
-                        Console.Write(firstarray[secondarrayindex] +" ");
+                        Console.Write(firstarray[secondarrayindex] + " ");
                     Console.WriteLine();
 
                     //Example of Array of Arrays or a Jagged Array
@@ -340,12 +340,12 @@ namespace Players_guide_study
                     matrix[1] = new int[6];
                     matrix[2] = new int[3];
                     matrix[3] = new int[2];
-                    
 
-                    for (int row = 0; row<matrix.Length; row++)
+
+                    for (int row = 0; row < matrix.Length; row++)
                     {
-                        for(int column = 0; column<matrix[row].Length; column++)
-                            Console.Write(matrix[row][column]+" ");
+                        for (int column = 0; column < matrix[row].Length; column++)
+                            Console.Write(matrix[row][column] + " ");
 
                         Console.WriteLine();
                     }
@@ -355,12 +355,12 @@ namespace Players_guide_study
                     int[] minimumArray = new int[] { 4, 51, -7, 13, -99, 15, -8, 45, 90 };
                     int currentMinimum = Int32.MaxValue;
 
-                    foreach(int tiny in minimumArray)
+                    foreach (int tiny in minimumArray)
                     {
                         if (tiny < currentMinimum)
                             currentMinimum = tiny;
                     }
-                    Console.WriteLine("The minimum value is: "+currentMinimum);
+                    Console.WriteLine("The minimum value is: " + currentMinimum);
 
                     //For the Average value in the array
                     int[] averageArray = new int[] { 4, 51, -7, 13, -99, 15, -8, 45, 90 };
@@ -370,7 +370,7 @@ namespace Players_guide_study
                         total += averageValue;
 
                     float finalAverageValue = (float)total / averageArray.Length;
-                    Console.WriteLine("The average value in the array is: "+ finalAverageValue);
+                    Console.WriteLine("The average value in the array is: " + finalAverageValue);
 
 
                     //End of Chapter 13. All Chapter 13 code should be before this break.
@@ -384,55 +384,85 @@ namespace Players_guide_study
                     //Try it out: Months of Year.  Using DaysOfWeek as an example, create an enumeration to reprsent months of year, and assign ethem values of 1-12
                     Console.WriteLine("Please Give a number between 1 & 12");
                     int InputedNumber = Convert.ToInt32(Console.ReadLine());
-                        if (InputedNumber<=12 && InputedNumber>=1)
-                            {
-                                switch (InputedNumber)
-                                {
-                                    case 1:
-                                        Console.WriteLine("You Picked January");
-                                        break;
-                                    case 2:
-                                        Console.WriteLine("You Picked February");
-                                        break;
-                                    case 3:
-                                        Console.WriteLine("You Picked March");
-                                        break;
-                                    case 4:
-                                        Console.WriteLine("You Picked April");
-                                        break;
-                                    case 5:
-                                        Console.WriteLine("You Picked May");
-                                        break;
-                                    case 6:
-                                        Console.WriteLine("You Picked June");
-                                        break;
-                                    case 7:
-                                        Console.WriteLine("You Picked July");
-                                        break;
-                                    case 8:
-                                        Console.WriteLine("You Picked August");
-                                        break;
-                                    case 9:
-                                        Console.WriteLine("You Picked September");
-                                        break;
-                                    case 10:
-                                        Console.WriteLine("You Picked October");
-                                        break;
-                                    case 11:
-                                        Console.WriteLine("You Picked November");
-                                        break;
-                                    case 12:
-                                        Console.WriteLine("You Picked Ecember");
-                                        break;
-                                }
-                        }
-                        else
+
+                    switch (InputedNumber)
+                    {
+                        case 1:
+                            Console.WriteLine("You Picked January");
+                            break;
+                        case 2:
+                            Console.WriteLine("You Picked February");
+                            break;
+                        case 3:
+                            Console.WriteLine("You Picked March");
+                            break;
+                        case 4:
+                            Console.WriteLine("You Picked April");
+                            break;
+                        case 5:
+                            Console.WriteLine("You Picked May");
+                            break;
+                        case 6:
+                            Console.WriteLine("You Picked June");
+                            break;
+                        case 7:
+                            Console.WriteLine("You Picked July");
+                            break;
+                        case 8:
+                            Console.WriteLine("You Picked August");
+                            break;
+                        case 9:
+                            Console.WriteLine("You Picked September");
+                            break;
+                        case 10:
+                            Console.WriteLine("You Picked October");
+                            break;
+                        case 11:
+                            Console.WriteLine("You Picked November");
+                            break;
+                        case 12:
+                            Console.WriteLine("You Picked Ecember");
+                            break;
+
+                        default:
                             {
                                 Console.WriteLine("You were supposed to input a number between 1 & 12.  Shame");
+                                break;
                             }
+                    }
+
+
 
                     //End of Chapter 14. All Chapter 14 code should be before this break.
                     break;
+
+                case 15:
+                    System.Threading.Thread.Sleep(1000);
+                    Console.WriteLine("Chapter 15: Methods");
+                    System.Threading.Thread.Sleep(2000);
+                    //Methods are a way of creating resuable code.  I may have to separate out the chapters into a new program.
+                    CountToTen();
+                    Console.WriteLine(GetNumberFromUser());
+
+                    //try it out: Reversing an Array. 3 methods are needed.  1 to create an array. 1 to reverse the array and a thirs to print the array at the end.
+
+                    int[] numbers = GenerateNumbers();
+                    Reverse(numbers);
+                    PrintNumbers(numbers);
+                    Console.WriteLine();
+
+                    
+                    Console.WriteLine("Hello, The following loop will print out the first 10 fibonacci numbers");
+                    //Try it out: Fibonacci Sequence
+                    for(int fibonacciCounter = 1; fibonacciCounter<=10; fibonacciCounter++)
+                    {
+                        Console.WriteLine(Fibonacci(fibonacciCounter));
+                    }
+                    //End of Chapter 15. All Chapter 14 code should be before this break.
+                    break;
+
+
+
 
 
 
@@ -441,12 +471,91 @@ namespace Players_guide_study
                 //This breaks the Switch Statement.  All code should be before this.
                 default:
                     {
-                        Console.WriteLine("No chapter work exists for that value: "+chapterselect);
+                        Console.WriteLine("No chapter work exists for that value: " + chapterselect);
                         break;
                     }
 
             }
 
         }
+
+        static void CountToTen()
+        {
+            //Method for Chapter 15 to be run up ahead
+            for (int index = 1; index <= 10; index++)
+                Console.WriteLine(index);
+        }
+
+        static int GetNumberFromUser()
+        {
+            int usersNumber = 0;
+
+            while (usersNumber < 1 || usersNumber > 10)
+            {
+                Console.WriteLine("Enter a Number between 1 and 10: ");
+                string usersResponse = Console.ReadLine();
+                usersNumber = Convert.ToInt32(usersResponse);
+            }
+
+            return usersNumber;
+        }
+
+
+        /// <summary>
+        /// the following Three Methods are for Chapter 15: Methods.  They create an array of numbers, reverse the numbers, and then print the array out. 
+        /// </summary>
+        /// <returns></returns>
+        static int[] GenerateNumbers()
+        {
+            int[] numbers = new int[10];
+
+            for (int index = 0; index < 10; index++)
+            {
+                numbers[index] = index + 1;
+            }
+            return numbers;
+        }
+
+        static void Reverse(int[] numbers)
+        {
+            int startIndex = 0;
+            int endIndex = numbers.Length-1;
+
+            while(startIndex <endIndex)
+            {
+                int tempspot = numbers[startIndex];
+                numbers[startIndex] = numbers[endIndex];
+                numbers[endIndex] = tempspot;
+
+                startIndex++;
+                endIndex--;
+            }
+        
+        }
+
+        static void PrintNumbers(int[] numbers)
+        {
+            for (int index=1; index<numbers.Length; index++)
+            {
+                Console.Write(numbers[index] + " ");
+            }
+        }
+
+        static int Fibonacci(int numbers)
+        {
+            if (numbers == 1)
+            {
+                return 1;
+            }
+            if (numbers == 2)
+            {
+                return 1;
+            }
+            return Fibonacci(numbers - 1) + Fibonacci(numbers - 2);
+            
+        }
+
     }
+
+
 }
