@@ -15,7 +15,7 @@ namespace Players_guide_study
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine("Please choose a chapter to review.  Chapters 5-15 are currently available");
+            Console.WriteLine("Please choose a chapter to review.  Chapters 5-16 are currently available");
             int chapterselect = Convert.ToInt32(Console.ReadLine());
             switch (chapterselect)
             {
@@ -458,13 +458,19 @@ namespace Players_guide_study
                     {
                         Console.WriteLine(Fibonacci(fibonacciCounter));
                     }
-                    //End of Chapter 15. All Chapter 14 code should be before this break.
+                    //End of Chapter 15. All Chapter 15 code should be before this break.
                     break;
 
+                case 16:
+                    System.Threading.Thread.Sleep(1000);
+                    Console.WriteLine("Chapter 16: Value and Reference Types");
+                    System.Threading.Thread.Sleep(2000);
 
 
 
 
+                    //end of Chapter 16.  All chapter 16 code should be before this break
+                    break;  
 
 
 
