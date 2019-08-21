@@ -449,9 +449,13 @@ namespace Players_guide_study
                     int[] numbers = GenerateNumbers();
                     Reverse(numbers);
                     PrintNumbers(numbers);
+                    Console.WriteLine();
 
+                    
+                    Console.WriteLine("Hello, give me a number so I can check the fibonacci number in that place:");
                     //Try it out: Fibonacci Sequence
-
+                    int fibonacciNumberFromUser = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine(Fibonacci(fibonacciNumberFromUser));
                     //End of Chapter 15. All Chapter 14 code should be before this break.
                     break;
 
@@ -537,21 +541,15 @@ namespace Players_guide_study
 
         static int Fibonacci(int numbers)
         {
-            int fibonacciPlace = 1;
-            int previousFibonacci = fibonacciPlace;
-            for (int start = 1; start < numbers; start++)
+            if (numbers == 1)
             {
-                if (start == numbers)
-                {
-                   return Console.WriteLine(fibonacciPlace);
-                }
-                else 
-                    {
-                        previousFibonacci = fibonacciPlace;
-                        fibonacciPlace = fibonacciPlace + previousFibonacci;
-                    }
+                return 1;
             }
-
+            if (numbers == 2)
+            {
+                return 1;
+            }
+            return Fibonacci(numbers - 1) + Fibonacci(numbers - 2);
             
         }
 
