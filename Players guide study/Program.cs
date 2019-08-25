@@ -466,7 +466,8 @@ namespace Players_guide_study
                     Console.WriteLine("Chapter 16: Value and Reference Types");
                     System.Threading.Thread.Sleep(2000);
 
-                    //
+                    //This contains no workable code.
+                    Console.WriteLine("This section contains no workable code, just a learning chapter.")
 
 
 
