@@ -467,7 +467,7 @@ namespace Players_guide_study
                     System.Threading.Thread.Sleep(2000);
 
                     //This contains no workable code.
-                    Console.WriteLine("This section contains no workable code, just a learning chapter.")
+                    Console.WriteLine("This section contains no workable code, just a learning chapter.");
 
 
 
